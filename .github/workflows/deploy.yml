@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18.14
+          node-version: 22   # ✅ upgraded to Node 22
           cache: 'npm'
 
       - name: Install Dependencies
@@ -37,13 +37,13 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
-      - name: Setup Pages   # 👈 moved here
+      - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public   # make sure this matches Quartz output
+          path: public   # ✅ ensure this is Quartz’s build output folder
 
   deploy:
     needs: build
