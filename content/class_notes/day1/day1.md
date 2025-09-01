@@ -116,4 +116,4 @@ That's why we use **MSE** because it is differentiable.
 2.## ` Computational Efficiency and Programmability `
 	- The Chain Rule is highlighted as something that is  "*programmable also*". This underscores its practical importance in computational frameworks for machine learning, enabling efficient and automated gradient calculations, which  are central to algorithm like backpropagation in neural networks.
 
-Notes: <a href="https://mega.nz/file/bAlGHR6D#bk5MX8RBrd3VD1X1C-5iHMpVi27fHGyjTU9fIvA4wsc" download>Download Markdown File</a>
+Notes, Audio, Video: <a href="https://mega.nz/folder/WBcnSYSK#5rC2hpmOcFOJlyjLHMwBsA" download>Download Markdown File</a>
