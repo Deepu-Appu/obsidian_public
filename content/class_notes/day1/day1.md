@@ -113,5 +113,7 @@ That's why we use **MSE** because it is differentiable.
 - The ability to apply the Chain Rule, like other differentiation methods, relies on the **differentiability of the loss function**. This is why squaring errors (e.g., in Mean Squared Error) is preferred over absolute values, as an "*Absolute function is not differentiable*" at zero and "*cannot be directly differentiable*" or "*put it in a continuous equation*" for automation.
 1. ### ` Extension of Partial Derivatives `
 	- The Chain Rule effectively extends the concepts of partial derivatives. While partial derivatives address function of multiple independent variables (e.g., `do y do x1` when `y` depends on `x1`,`x2`,`x3`), the Chain Rule then links theses partial derivatives across multiple layers of dependency in composite
+2.## ` Computational Efficiency and Programmability `
+	- The Chain Rule is highlighted as something that is  "*programmable also*". This underscores its practical importance in computational frameworks for machine learning, enabling efficient and automated gradient calculations, which  are central to algorithm like backpropagation in neural networks.
 
 Notes: <a href="https://mega.nz/file/uJ9RjISY#aKL2szy0T7jZgIgbpEzO3V9WS95Pgi4gb3FRBIPxGZs" download>Download Markdown File</a>
