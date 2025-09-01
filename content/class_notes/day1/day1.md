@@ -114,4 +114,4 @@ That's why we use **MSE** because it is differentiable.
 1. ### ` Extension of Partial Derivatives `
 	- The Chain Rule effectively extends the concepts of partial derivatives. While partial derivatives address function of multiple independent variables (e.g., `do y do x1` when `y` depends on `x1`,`x2`,`x3`), the Chain Rule then links theses partial derivatives across multiple layers of dependency in composite
 
-Notes: <a href="https://mega.nz/file/GEEGkJ7B#ksgtjJyrMBklu6GdFhLypbAlhrkXKOP05OsFd2TmVrI" download>Download Markdown File</a>
+Notes: <a href="https://mega.nz/file/uJ9RjISY#aKL2szy0T7jZgIgbpEzO3V9WS95Pgi4gb3FRBIPxGZs" download>Download Markdown File</a>
