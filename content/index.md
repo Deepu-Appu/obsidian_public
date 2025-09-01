@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Welcome to To my notes i am using Qurtz for the publishing my notes
 ---
 
 This is a blank Quartz installation.
