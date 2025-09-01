@@ -54,7 +54,7 @@ For a loss function to be effectively utilized in gradient **gradient descent**,
 
 That's why we use **MSE** because it is differentiable.
 
-1. ### ` The Purpose of Squaring the ` 
+1. ### ` The Purpose of Squaring the Error ` 
 	- **Nullifying Signs**: One of the primary reasons for squaring the loss is to **cancel the effect of the sign** of a prediction error. Whether a prediction is too high or too low, the loss function should ideally only consider the **magnitude** or the absolute value of the error, not its direction. Squaring each error inherently **removes the sign** (as both positive and negative numbers becomes positive when squared), thus focusing purely on the magnitude
 2. ### ` Why Squaring is Preferred over Absolute Value (Magnitude) `
 	- **Differentiability**: The critical reason for choosing squaring over taking the absolute value is **differentiability**.
