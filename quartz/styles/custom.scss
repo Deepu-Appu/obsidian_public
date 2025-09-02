@@ -1,5 +1,136 @@
-@use "./base.scss";
+@use "./base.scss" as *;
 
-// put your custom CSS here!
+/* Light & Dark Mode Contact Form Overrides for Quartz */
 
-  
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 20px;
+  background: var(--background-primary);
+  border-radius: 20px;
+  position: relative;
+}
+
+.contact-container .contact-form {
+  width: 100%;
+  max-width: 500px;
+  background: var(--background-primary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  padding: 24px;
+  border-radius: 16px;
+  font-family: system-ui, sans-serif;
+  transition: background 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
+  color: var(--text-normal) !important;
+
+  /* ✅ Form shadow only */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
+}
+
+.contact-container .contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: var(--text-normal) !important;
+}
+
+.contact-container .contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--text-normal) !important;
+}
+
+.contact-container .contact-form input,
+.contact-container .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: var(--background-secondary) !important;
+  color: var(--text-normal) !important;
+  box-sizing: border-box;
+  transition: background 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
+}
+
+.contact-container .contact-form input::placeholder,
+.contact-container .contact-form textarea::placeholder {
+  color: var(--text-faint) !important;
+}
+
+/* ✅ Input focus (light mode) */
+.contact-container .contact-form input:focus,
+.contact-container .contact-form textarea:focus {
+  border-color: #ADD8E6 !important;
+  box-shadow: 0 0 6px rgba(173, 216, 230, 0.6) !important;
+  outline: none !important;
+}
+
+.contact-container .contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #ADD8E6 !important; /* Light blue button */
+  color: #1c1c24 !important;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: none !important;
+}
+
+.contact-container .contact-form button:hover {
+  background: #87CEEB !important; /* hover blue */
+}
+
+/* 🌙 DARK MODE OVERRIDES */
+body.theme-dark .contact-container,
+.dark .contact-container {
+  background: #181a1b !important; /* slightly lighter than body */
+  border-radius: 20px;
+  padding: 25px;
+
+  /* Brighter outer shadow for visibility */
+  box-shadow: 
+    0 0 25px rgba(173, 216, 230, 0.35),  /* soft light blue glow */
+    0 0 45px rgba(0, 0, 0, 0.7);         /* subtle dark spread */
+}
+
+/* FORM inside container */
+body.theme-dark .contact-container .contact-form,
+.dark .contact-container .contact-form {
+  background: #1c1c24 !important;
+  border: 1px solid #2a2a38 !important;
+  border-radius: 15px;
+  padding: 20px;
+
+  /* lighter shadow around form */
+  box-shadow: 
+    0 4px 20px rgba(173, 216, 230, 0.25),
+    0 6px 25px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Headings inside form */
+body.theme-dark .contact-container .contact-form h2,
+.dark .contact-container .contact-form h2 {
+  color: #ffffff !important;
+  text-align: center;
+}
+
+/* Button */
+body.theme-dark .contact-container button,
+.dark .contact-container button {
+  background: #ADD8E6 !important; /* light blue */
+  color: #000 !important;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: bold;
+}
+
+body.theme-dark .contact-container button:hover,
+.dark .contact-container button:hover {
+  background: #87CEEB !important; /* hover blue */
+}
